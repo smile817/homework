@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.0.min.js">
+</script>
+<meta charset="utf-8">
+<title>jquery learning</title>
+</head>
+
+<body>
+<form method="post">
+<input type="button" value="Done" id="done">
+<input type="text" name="hint" id="hint">
+<input type="submit" value="提交" id="submit">
+</form>
+
+<script type="text/javascript">
+$("#submit").bind("click", function() {
+var hint = $("#hint").val();
+var new_node = $("<span>");
+new_node.text(hint);
+new_node.appendTo($("form"));
+new_node.attr("id", "new_node");
+return false;
+});
+$("#done").bind("click", function() {
+$("#new_node").remove();
+});
+</script>
+</body>

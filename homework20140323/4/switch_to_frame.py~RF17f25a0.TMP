@@ -1,0 +1,13 @@
+# coding = utf-8
+from selenium import webdriver
+import os
+
+
+dr=webdriver.Chrome()
+file_path = 'file:///' + os.path.abspath('test.html')
+
+dr.get(file_path)
+
+url=dr.switch_to_frame('')
+print url
+dr.get(url)

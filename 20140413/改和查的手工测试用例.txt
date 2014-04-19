@@ -1,0 +1,26 @@
+查：
+1.用chrome打开url为http://localhost/wordpress/wp-login.php的登录页面
+2.在页面上id为user_login的input中输入admin
+3.在页面上id为user_pass的input中输入admin123
+4.点击登录按钮
+5.页面要跳转得到这个页面url=http://localhost/wordpress/wp-admin/
+6.进入站点首页：http://localhost/wordpress/
+7.查看title for 1397376594.14 是否存在在该页面
+
+
+改：
+1.用chrome打开url为http://localhost/wordpress/wp-login.php的登录页面
+2.在页面上id为user_login的input中输入admin
+3.在页面上id为user_pass的input中输入admin123
+4.点击登录按钮
+5.页面要跳转得到这个页面url=http://localhost/wordpress/wp-admin/
+6.进入id="post-24"的文章修改页面（http://localhost/wordpress/wp-admin/post.php?post=24&action=edit）
+7.输入title为'update title'+time.time()
+8.输入content为‘update content’+time.time()
+9.点击更新按钮
+10.进入站点首页http://localhost/wordpress/
+11.查找“update title ”+time.time() 是否在站点首页的
+
+
+
+
